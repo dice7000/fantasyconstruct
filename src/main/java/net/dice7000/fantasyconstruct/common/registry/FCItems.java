@@ -17,6 +17,7 @@ public class FCItems {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create
             (Registries.CREATIVE_MODE_TAB, FantasyConstruct.MODID);
 
+    /*
     public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register
@@ -33,4 +34,5 @@ public class FCItems {
         ITEMS.register(eventBus);
         CREATIVE_MODE_TABS.register(eventBus);
     }
+     */
 }

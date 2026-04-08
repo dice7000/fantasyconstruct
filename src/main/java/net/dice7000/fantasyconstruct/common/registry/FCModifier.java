@@ -23,13 +23,6 @@ public class FCModifier {
     public static final StaticModifier<Modifier> FE_DAMAGE = MODIFIER.register("fe_damage", FEDamageModifier::new);
     public static final StaticModifier<Modifier> FADE_POWER = MODIFIER.register("fade_power", FadePowerModifier::new);
 
-    public static final ResourceKey<DamageType> FE_DAMAGE_KEY = ResourceKey.create
-            (Registries.DAMAGE_TYPE, ResourceLocation.parse("fantasyconstruct:fe_damage"));
-
-    public static DamageSource anotherFEDamage(Entity attacker) {
-        return (new ModDamageSources.EasyDamageSource(FE_DAMAGE_KEY, attacker));
-    }
-
     public static void register(IEventBus eventBus) {
         MODIFIER.register(eventBus);
     }

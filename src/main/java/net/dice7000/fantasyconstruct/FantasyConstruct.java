@@ -20,7 +20,7 @@ public class FantasyConstruct {
     public FantasyConstruct(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
         modEventBus.addListener(this::commonSetup);
-        FCItems.register(modEventBus);
+        //FCItems.register(modEventBus);
         FCModifier.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         //context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
