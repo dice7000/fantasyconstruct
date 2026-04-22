@@ -29,8 +29,5 @@
     "abilities": 1
   },
   "result": "fantasyconstruct:fade_power",
-  "level": {
-    "min": 1,
-    "max": 20
-  }
+  "level": 1
 }

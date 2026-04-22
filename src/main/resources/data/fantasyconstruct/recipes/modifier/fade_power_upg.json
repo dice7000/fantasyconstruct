@@ -13,21 +13,21 @@
       "item": "fantasy_ending:fantasy_ending_ingot"
     },
     {
-      "item": "fantasy_ending:fantasy_ending_ingot"
+      "item": "fantasy_ending:fantasy_ending_sword"
+    },
+    {
+      "item": "fantasy_ending:fantasy_ending_sword"
     },
     {
       "item": "fantasy_ending:fantasy_ending_sword"
     },
     {
       "item": "fantasy_ending:fantasy_ending_ingot"
-    },
-    {
-      "item": "fantasy_ending:fantasy_ending_ingot"
     }
   ],
-  "slots": {
-    "abilities": 1
-  },
-  "result": "fantasyconstruct:fe_damage",
-  "level": 1
+  "result": "fantasyconstruct:fade_power",
+  "level": {
+    "min": 2,
+    "max": 20
+  }
 }

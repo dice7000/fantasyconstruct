@@ -1,13 +1,8 @@
 {
   "type": "tconstruct:modifier",
-  "tools": [
-    {
-      "tag": "tconstruct:modifiable/melee/primary"
-    },
-    {
-      "tag": "tconstruct:modifiable/ranged"
-    }
-  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/armor/leggings"
+  },
   "inputs": [
     {
       "item": "fantasy_ending:fantasy_ending_ingot"
@@ -16,7 +11,7 @@
       "item": "fantasy_ending:fantasy_ending_ingot"
     },
     {
-      "item": "fantasy_ending:fantasy_ending_sword"
+      "item": "fantasy_ending:fantasy_ending_leggings"
     },
     {
       "item": "fantasy_ending:fantasy_ending_ingot"
@@ -25,9 +20,9 @@
       "item": "fantasy_ending:fantasy_ending_ingot"
     }
   ],
-  "slots": {
-    "abilities": 1
-  },
-  "result": "fantasyconstruct:fe_damage",
-  "level": 1
+  "result": "fantasyconstruct:runic_shield",
+  "level": {
+    "min": 2,
+    "max": 20
+  }
 }

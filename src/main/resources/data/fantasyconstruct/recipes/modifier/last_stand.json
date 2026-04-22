@@ -1,0 +1,29 @@
+{
+  "type": "tconstruct:modifier",
+  "tools": [
+    {
+      "tag": "tconstruct:modifiable/armor"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "fantasy_ending:fantasy_ending_helmet"
+    },
+    {
+      "item": "fantasy_ending:fantasy_ending_chestplate"
+    },
+    {
+      "item": "fantasy_ending:fantasy_ending_leggings"
+    },
+    {
+      "item": "fantasy_ending:fantasy_ending_boots"
+    },
+    {
+      "item": "fantasy_ending:fantasy_ending_ingot"
+    }
+  ],
+  "slots": {
+    "abilities": 1
+  },
+  "result": "fantasyconstruct:last_stand"
+}

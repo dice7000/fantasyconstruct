@@ -2,7 +2,6 @@ package net.dice7000.fantasyconstruct.common.modifier;
 
 import com.mega.uom.common.damagesource.ModDamageSources;
 import com.mega.uom.util.entity.EntityActuallyHurt;
-import net.dice7000.fantasyconstruct.common.registry.FCModifier;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
