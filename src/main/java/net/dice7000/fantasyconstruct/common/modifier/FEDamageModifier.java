@@ -5,6 +5,7 @@ import com.mega.uom.util.entity.EntityActuallyHurt;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
@@ -14,7 +15,7 @@ import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 
 public class FEDamageModifier extends Modifier implements MeleeHitModifierHook {
-    @Override public void afterMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
+    @Override public void afterMeleeHit(@NotNull IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
         LivingEntity attacker = context.getAttacker();
         Entity entity = context.getTarget();
         int level = Math.min(modifier.getLevel(), 20);
@@ -23,7 +24,7 @@ public class FEDamageModifier extends Modifier implements MeleeHitModifierHook {
             float attackConf = 0.2F + strengthScale * strengthScale * 0.8F;
             float defaultDamageAmount = (15 + attacker.getRandom().nextInt(5) +
                     target.getMaxHealth() * 0.002F + target.getHealth() * 0.008F) * attackConf;
-            EntityActuallyHurt hurt = new AnotherActuallyHurt(target);
+            EntityActuallyHurt hurt = new EntityActuallyHurt(target);
             hurt.actuallyHurt(ModDamageSources.causeDeathFeDamage(attacker), defaultDamageAmount * (level / 2.0F), true);
         }
 

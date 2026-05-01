@@ -10,7 +10,7 @@
   ],
   "inputs": [
     {
-      "item": "fantasy_ending:fantasy_ending_ingot"
+      "item": "fantasy_ending:fantasy_upgrade_orb"
     },
     {
       "item": "fantasy_ending:fantasy_ending_ingot"
@@ -22,7 +22,7 @@
       "item": "fantasy_ending:fantasy_ending_ingot"
     },
     {
-      "item": "fantasy_ending:fantasy_ending_ingot"
+      "item": "fantasy_ending:fantasy_upgrade_orb"
     }
   ],
   "result": "fantasyconstruct:fe_damage",
